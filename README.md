@@ -31,7 +31,7 @@ This is the demo website for our project. http://104.154.117.206:8080/index.html
  - ./model/Prediction_func.ipynb
 
 ## Modeling
-- Nearest Neighbors Recommendation:./model/Recommend1.ipynb
+- Nearest Neighbors Recommendation: ./model/Recommend1.ipynb
  - We utilized nearest neighbors algorithm to help user to find out the top 20 restaurants based on his or her current geolocation. After adding features “stars_business”, “stars_review”, “average_stars”, “latitude” and “longitude” , we built the nearest neighbors model by tuning coefficients for each feature and take the highest “start_business”, highest “stars_review”, highest “average_stars”, current “latitude” and current “longitude” as test data to find out the 20 nearest neighbors. 
 
 - Topic Model and Sentiment Analysis with Key Word: ./model/Topic Model2-Key Word Sentiment Analysis.ipynb
@@ -41,7 +41,7 @@ This is the demo website for our project. http://104.154.117.206:8080/index.html
 - Sentiment Analysis Classification about Review: ./model/Sentiment Analysis3-Review Classification.ipynb
  - Sometimes some review are ambiguous about corresponding business. To provide more clear review, we also did sentiment analysis towards review data. We first grouped by all review text data for each business and preprocessed data by removing stopwords, removing punctuation, tokenizing and doing stemming and lemmatization. Then we regarded those review data with five stars as positive and those review data with no more than two stars as negative. We took them as training set to build the sentiment analysis classification model. For those ambiguous review, we can use this model to extract the sentiment behind it and give our user more direct information. 
 
-- User Rate Prediction by Time Series Model:./model/Time Series4.ipynb
+- User Rate Prediction by Time Series Model: ./model/Time Series4.ipynb
  - Sometimes average review star from the yelp can not give you a comprehensive understanding about the immediate feedback about food or service quality. To compensate that, we built the time series model to give the monthly trend of review star. We firstly grouped by the monthly review stars based on their mean values. Then we computed the moving average for the time series and performed Dickey-Fuller test to analyze the results. Besides, we tried different mathematical transformation towards monthly data. After removing the trend and seasonality, we visualized the autocorrelation function and partial autocorrelation function. According to them, we decided the parameter for the autoregressive model(AR), moving average model(RA) and autoregressive moving average(ARMA) model. Then we applied these models to our data and transformed results to the original scale. In the end, we used several statistics to evaluate the model to make our final decision.
 
 ## System G, Graph analysis
