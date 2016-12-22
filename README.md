@@ -1,7 +1,6 @@
 # Wow3 recommender
 
-Below is the demo website for our project.
-http://104.154.117.206:8080/index.html
+This is the demo website for our project. http://104.154.117.206:8080/index.html
 
 
 ## Contents
