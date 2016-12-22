@@ -1,7 +1,7 @@
 # Wow3 recommender
 
-This is the demo website for our project. http://104.154.117.206:8080/index.html
-
+This is the demo website for our project. http://104.154.117.206:8080/index.html  
+(This website is up for short periods)
 
 ## Contents
 - Data Processing : ./data
